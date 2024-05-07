@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Sans-Serif;
+}
+
+
+.logo {
+    width: 100px;
+
+}
+
+nav {
+    background: linear-gradient(to left, #808080, #3fada8);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 17px;
+    margin-right: 30px;
+}
+
+nav .mainMenu li a:hover {
+    background: rgb(255, 94, 0);
+}
+
+nav .openMenu {
+    font-size: 20px;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo {
+    margin: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to left, #808080, #3fada8);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenuli a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 16px;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+.rais {
+    background-image: url("https://img.freepik.com/free-photo/two-luxury-girl-sitting-restaurant_1157-14661.jpg");
+    height: 100vh;
+}
+
+.content {
+    padding-top: 200px;
+}
+
+.content-heading {
+    font-size: 40px;
+    font-family: "Roboto";
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.prag {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: #fff;
+    text-align: center;
+}
+
+.get-btn {
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    border-radius: 10px;
+    background: #1515e8;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.get-btn:hover {
+    transform: scale(1.1);
+    background: #030363;
+}
+
+
+
+
+.service-container {
+    background: #fff;
+    min-height: 50vh;
+    background-size: cover;
+}
+
+.service-main-heading {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Roboto";
+    color: #222;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.images {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service-icon {
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.service-icon:hover {
+    transform: scale(1.1);
+}
+
+.icons-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    font-family: "Roboto";
+    padding-top: 20px;
+}
+
+.icon-paragraph {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: #999;
+}
+
+
+
+.about-container {
+    background: #fff;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.about-main-heading {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Roboto";
+    color: #222;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.about-sub-heading {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: #000;
+    padding-top: 10px;
+}
+
+.img {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img1 {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.img1:hover {
+    transform: scale(1.1);
+}
+
+.contact-heading {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Roboto";
+    color: #222;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cont-paragraph {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: #222;
+    padding-left: 20px;
+}
+
+.form-control {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto";
+    color: #999;
+    margin: 20px;
+    background: #c8ccc9;
+    margin-right: 20px;
+}
+
+.btn {
+    background: #10036e;
+    width: 50%;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    color: #fff;
+    background: blue;
+}
+
+.footer-section {
+    background: linear-gradient(to left, #808080, #3fada8);
+    background-size: cover;
+}
+
+.create {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer-heading {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Sans-Serif;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.footer-prag {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Sans-Serif;
+    color: #e0d8eb;
+    padding-left: 20px;
+}
+
+
+
+.footer-icons {
+    font-size: 20px;
+    color: #222;
+    margin: 10px;
+    background: #fff;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-shadow: 1px 1px 10px 1px #dcdde3;
+    transition: 1s;
+}
+
+.footer-icons:hover {
+    background: #1227e3;
+    color: #fff;
+}
+
+.footer-icons2 {
+    font-size: 20px;
+    color: #222;
+    margin: 10px;
+    background: #fff;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 7px;
+    box-shadow: 1px 1px 10px 1px #dcdde3;
+    transition: 1s;
+}
+
+.footer-icons2:hover {
+    background: red;
+    color: #fff;
+}
+
+.footer-icons1 {
+    font-size: 20px;
+    color: #222;
+    margin-left: 10px;
+
+
+    margin: 10px;
+    background: #fff;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-shadow: 1px 1px 10px 1px #dcdde3;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.footer-icons1:hover {
+    background-image: linear-gradient(to bottom, #ed0776, #fa9643);
+    color: #fff;
+
+}
+
+.footer-sub-prag {
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: Sans-Serif;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.add-icons1 {
+    font-size: 20px;
+    color: #03034f;
+    margin: 10px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px 1px #fff;
+}
+
+.add-icons1:hover {
+    background: #e01d92;
+}
+
+.add-icons2 {
+    font-size: 20px;
+    color: #03034f;
+    margin: 10px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px 1px #fff;
+}
+
+.add-icons2:hover {
+    background: #129628;
+    color: #fff;
+}
+
+.add-icons3 {
+    font-size: 20px;
+    color: #03034f;
+    margin: 10px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px 1px #fff;
+}
+
+.add-icons3:hover {
+    background: #129628;
+    color: #fff;
+}
+
+
+.add-icons4 {
+    font-size: 20px;
+    color: #03034f;
+    margin: 10px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px 1px #fff;
+}
+
+.add-icons4:hover {
+    background: #eb0c35;
+    color: #fff;
+}
+
+.anchor-footer {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Sans-Serif;
+    color: #fff;
+    margin-left: 0px;
+}
+
+.anchor-footer:hover {
+    outline: 0;
+    text-decoration: none;
+    color: #fff;
+
+}
